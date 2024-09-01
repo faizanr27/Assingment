@@ -12,6 +12,7 @@ const port = process.env.PORT || 4000;
 // Middleware
 app.use(cors({
     origin: 'https://assingment-jade.vercel.app',
+    credentials: true,
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
