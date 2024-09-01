@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/', signUpRoute)
+app.use('/signup', signUpRoute)
 app.use('/userlist', userListRoute)
 
 app.listen(port, (req, res) => {
