@@ -6,7 +6,7 @@ const upload = require('../middlewares/multerConfig');
 router.get('/', (req, res)=>{
     res.status(200).send("Hello this is backend for Assignment")
 })
-router.post('/', upload.single('resume'), async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const {name, email} = req.body;
         const resume = req.file.filename;
