@@ -4,6 +4,9 @@ const pool = require('../db/db');
 const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
 
+router.get('/', (req, res)=>{
+    res.status(200).send("Hello this is backend for Assignment")
+})
 router.post('/', upload.single('resume'), async (req, res) => {
     try {
         const {name, email} = req.body;
