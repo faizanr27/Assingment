@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/signup': 'https://assingment-1-backend.onrender.com,
-      'user-list': 'https://assingment-1-backend.onrender.com/userlist',// Proxy requests to backend
+      'user-list': 'https://assingment-1-backend.onrender.com/userlist', // Proxy requests to backend
     },
   },
 });
