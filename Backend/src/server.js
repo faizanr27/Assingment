@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/signup', signUpRoute)
+app.use('/', signUpRoute)
 app.use('/userlist', userListRoute)
 
 app.listen(port, (req, res) => {
