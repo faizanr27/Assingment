@@ -39,10 +39,10 @@ const Signup = () => {
     };
 
     return (
-        <div className="max-w-lg mx-auto p-8 bg-white rounded-lg shadow-lg border border-gray-200 mt-10">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-6">Sign Up</h2>
+        <div className="flex min-h-screen justify-center  bg-gradient-to-r from-blue-500 to-indigo-600  border-gray-200">
+            <form onSubmit={handleSubmit} encType="multipart/form-data" className='w-full max-w-md h-min bg-white rounded-lg shadow-lg p-8 space-y-6 mt-60'>
+             <h2 className="text-3xl font-semibold text-gray-800 mb-6">Sign Up</h2>
             {message && <p className="text-center mb-4 text-red-500">{message}</p>}
-            <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div className="mb-5">
                     <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="name">
                         Name
