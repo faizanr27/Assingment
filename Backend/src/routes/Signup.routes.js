@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const pool = require('../db/db');
-const multer  = require('multer')
-const upload = multer({ dest: 'uploads/' })
+const upload = require('../middlewares/multerConfig');
 
 router.get('/', (req, res)=>{
     res.status(200).send("Hello this is backend for Assignment")
