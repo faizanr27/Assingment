@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/': 'https://assingment-1-backend.onrender.com/signup',
+      '/signup': 'https://assingment-1-backend.onrender.com,
       'user-list': 'https://assingment-1-backend.onrender.com/userlist',// Proxy requests to backend
     },
   },
