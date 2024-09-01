@@ -19,7 +19,7 @@ const Signup = () => {
         formData.append('resume', resume);
 
         try {
-            const response = await axios.post('https://assingment-1-backend.onrender.com/signup', formData, {
+            const response = await axios.post('/', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
