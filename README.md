@@ -263,7 +263,3 @@ The backend uses `express.Router` for routing:
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 4. **Deploy** your project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
